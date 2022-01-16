@@ -1,0 +1,60 @@
+/* flex-grid css start */
+.users-container {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.user {
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    background-color: aquamarine;
+}
+
+/* flex-grid css end */
+/* relative-absolute css  start*/
+.box {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+#box-1 {
+    background-color: aquamarine;
+}
+
+#box-2 {
+    background-color: rgb(72, 146, 43);
+}
+
+#box-3 {
+    background-color: rgb(218, 130, 203);
+}
+
+/* relative-absolute css  end*/
+/* resposiveness css start */
+.welcome-message {
+    background-color: rgb(231, 105, 60);
+    height: 200px;
+}
+
+/* resposiveness css end */
+@media only screen and (max-width:688px) {
+    .welcome-message {
+        background-color: cyan;
+        text-align: center;
+        height: 100px;
+    }
+
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .welcome-message {
+        background-color: rgb(129, 121, 121);
+        text-align: center;
+        color: white;
+
+    }
+
+}
